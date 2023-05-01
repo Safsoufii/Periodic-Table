@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Barlow, sans-serif;
+}
+.container {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px 10px;
+    
+   
+    background-image: linear-gradient(#e8cdd1, #fefdfd42);
+  }
+  
+  .Periodic-Table {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px 10px;
+  
+    grid-template-areas:
+      "Periodic Periodic Periodic Periodic Periodic"
+      "Table Table Table Table Table";
+    grid-area: 3 / 6 / 6 / 11;
+  }
+  
+  .Periodic { grid-area: Periodic; }
+  
+  #title1 {
+    font-style: Extrabold;
+    font-size: 59px;
+  }
+  #title2 {
+    font-style: Extrabold;
+    font-size: 59px;
+  }
+  
+  .Table { grid-area: Table; }
+  
+  .Image { grid-area: 6 / 6 / 11 / 11; }
+
+  #chemistry-photo {
+      width: 95%;
+      height: 100%;
+      object-fit: cover;
+      box-shadow: 0 100px 50px -2px rgba(42, 2, 58, 0.5);
+  }
+  
+  .Subheading {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 10px 10px;
+   
+    grid-template-areas:
+      "sh1 sh1 sh1 sh1 sh2 sh2 sh2";
+    grid-area: 3 / 11 / 5 / 18;
+    
+  }
+  
+  .sh1 { grid-area: sh1; 
+    font-style: Extrabold;
+    font-size: 18px;
+    margin-top: 5%;}
+  
+  .sh2 { grid-area: sh2;
+    font-style: Extrabold;
+    font-size: 18px; 
+    margin-top: 5%;}
+  
+  .Body-Text {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px 10px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "translations translations translations translations translations translations translations"
+      "translations translations translations translations translations translations translations"
+      "defintion defintion defintion defintion defintion defintion defintion"
+      "defintion defintion defintion defintion defintion defintion defintion"
+      "defintion defintion defintion defintion defintion defintion defintion"
+      "defintion defintion defintion defintion defintion defintion defintion"
+      "defintion defintion defintion defintion defintion defintion defintion";
+    grid-area: 4 / 11 / 11 / 18;
+  }
+  
+  .translations { grid-area: translations; 
+    font-style: Thin;
+    font-size: 18px;
+  margin-top: 6%;}
+  
+  .defintion { grid-area: defintion; 
+    font-style: Thin;
+    font-size: 14.3px;
+    line-height: 19.6pt;
+}
+  
+  .Down {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 10px;
+   
+    grid-area: 12 / 1 / 13 / 23;
+  }
+  
+  .Navbar {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 10px;
+    
+    grid-area: 1 / 1 / 2 / 23;
+    height: 100%;
+    width: 100%;
+    background-color: #f9eaec;
+  }
+  
+  .Logo { grid-area: 1 / 2 / 2 / 3; }
+
+  #logo {
+    width: 80%;
+height: 80%;
+  }
+  
+  .Webname { grid-area: 1 / 3 / 2 / 7;
+align-self: center;
+justify-items: center; }
+  
+  .drop { grid-area: 1 / 22 / 2 / 23;
+  margin-top: 30%; }
+  
+  .Search { grid-area: 1 / 21 / 2 / 21; 
+  margin-top: 10%;}
+
+  .Search input[type="text"] {
+    border: solid rgba(48, 3, 57, 0.055);
+    border-radius: 30px;
+    outline: 0.2px;
+    color: rgba(0, 0, 0, 0.5);
+  }
+  
+
+  
+
+  .arrow { grid-area: 12 / 11 / 13 / 12; }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
